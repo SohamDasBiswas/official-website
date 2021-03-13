@@ -1,0 +1,104 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#background
+{
+    width: 0%;
+    height: 20%;
+    margin: auto;
+    position: absolute;
+    top: 85px;
+    left: 450px;
+}
+body
+{
+    /* background-image: url("E:\\python projects\\Techrius WEB\\static\\img\\techrius.png"); */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.menu_bar
+{
+    background: #1a887d;
+    text-align: center;
+}
+.menu_bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+}
+.menu_bar ul li
+{
+    width: 140px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu_bar ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.active, .menu_bar ul li:hover
+{
+    background: #38968c;
+    border-radius: 3px;
+}
+.menu_bar .fa
+{
+    margin-right: 8px;
+}
+.sub_menu_member
+{
+    display:none;
+}
+.menu_bar ul li:hover .sub_menu_member
+{
+    display: block;
+    position: absolute;
+    background: #1a887d;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu_bar ul li:hover .sub_menu_member ul
+{
+    display: block;
+    margin: 10px;
+}
+.menu_bar ul li:hover .sub_menu_member ul li
+{
+    width: 170px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu_bar ul li:hover .sub_menu_member ul li:last-child
+{
+    border-bottom: none;
+}
+.menu_bar ul li:hover .sub_menu_member ul li a:hover
+{
+    color: #b2ff00;
+}
+.fa-angle-right
+{
+    float: right;
+}
+.sub_menu_member_s
+{
+    display: none;
+}
+.hover-me:hover .sub_menu_member_s
+{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 150px;
+    background: #1a887d;
+}
